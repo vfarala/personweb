@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Anek Gujarati', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative; /* Add position relative to body or a higher stacking context */
+  background-image: linear-gradient(
+    to right, 
+    #1c1303, #412804, #684004, #a06106, #e6ac33, 
+    #e6ac33, #a06106, #684004, #412804, #1c1303
+);
+}
+
+form {
+  background: #060000;
+}
+
+button#login, button#register {
+  background: #e6ac33 !important;
+  border: none;
+}
+
+button#login:hover, button#register:hover {
+  background: #996515 !important;
+  border: none;
+}
+
+button#login-tab:hover, button#register-tab:hover {
+  color: goldenrod !important;
+  background-color: #060000;
+}
+
+.custom-select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.custom-select-wrapper:after {
+  content: '\276f'; /* Chevron-like symbol; adjust as needed */
+  transform: translateY(-50%) rotate(90deg); /* Rotates the right-pointing arrow to down */
+  font-size: 0.6 em; /* Adjust the size as needed */
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  pointer-events: none;
+}
+
+
